@@ -46,4 +46,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("com.google.android.gms:play-services-ads:23.1.0")
+    implementation("com.google.android.ump:user-messaging-platform:2.2.0")
 }
