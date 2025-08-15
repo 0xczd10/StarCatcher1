@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M50,100 C80,80 150,70 190,40 C160,100 120,130 50,100 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="50"
+                android:startY="100"
+                android:endX="190"
+                android:endY="40">
+                <item android:color="#40FFFFFF" android:offset="0.0" />
+                <item android:color="#00FFFFFF" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <path
+        android:pathData="M50,100 C90,90 160,85 195,80 C150,100 90,110 50,100 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="50"
+                android:startY="100"
+                android:endX="195"
+                android:endY="80">
+                <item android:color="#99CCFFFF" android:offset="0.0" />
+                <item android:color="#00CCFFFF" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <path
+        android:pathData="M50,100m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="30"
+                android:centerX="50"
+                android:centerY="100">
+                <item android:color="#FFFFFF" android:offset="0.0" />
+                <item android:color="#80FFFFFF" android:offset="0.5" />
+                <item android:color="#00FFFFFF" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,100m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0" />
+
+</vector>

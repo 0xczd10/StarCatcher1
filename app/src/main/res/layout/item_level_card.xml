@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="32dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#60000000"
+        app:cardCornerRadius="24dp"
+        app:strokeColor="#A0FFFFFF"
+        app:strokeWidth="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/levelNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Level 50" />
+
+            <ImageView
+                android:id="@+id/constellationPreview"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/ic_constellation_ursa_minor"
+                app:layout_constraintBottom_toTopOf="@id/starsLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/levelNumberTextView"
+                app:tint="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/starsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:alpha="0.3"
+                    android:src="@drawable/ic_star" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lockOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#A0000000"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/lockIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_lock"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="#FFFFFF" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>
